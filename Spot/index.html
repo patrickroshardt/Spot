@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spot - Eventos El Salvador</title>
-    <meta name="description" content="Spot - Descubre los mejores eventos en El Salvador - Conciertos, deportes, cultura y más">
+    <title>Spot - Eventos El Salvador | Descubre los Mejores Eventos</title>
+    <meta name="description" content="Spot - La mejor plataforma de eventos en El Salvador. Conciertos, deportes, cultura, tecnología. Compra entradas, crea eventos, encuentra tu próximo evento favorito.">
+    <meta name="keywords" content="Spot, eventos El Salvador, conciertos, deportes, cultura, tecnología, entradas, tickets, eventos San Salvador, festivales, conferencias">
+    <meta name="author" content="Spot - Eventos El Salvador">
+    <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#8B5CF6">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spot-eventos.com/">
+    <meta property="og:title" content="Spot - Eventos El Salvador | Descubre los Mejores Eventos">
+    <meta property="og:description" content="La mejor plataforma de eventos en El Salvador. Conciertos, deportes, cultura, tecnología. Compra entradas, crea eventos.">
+    <meta property="og:image" content="https://spot-eventos.com/icon-512.png">
+    <meta property="og:site_name" content="Spot">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://spot-eventos.com/">
+    <meta property="twitter:title" content="Spot - Eventos El Salvador">
+    <meta property="twitter:description" content="La mejor plataforma de eventos en El Salvador. Conciertos, deportes, cultura, tecnología.">
+    <meta property="twitter:image" content="https://spot-eventos.com/icon-512.png">
+    
+    <!-- Geo tags para El Salvador -->
+    <meta name="geo.region" content="SV">
+    <meta name="geo.country" content="El Salvador">
+    <meta name="geo.placename" content="San Salvador">
+    <meta name="ICBM" content="13.7942, -88.8965">
+    
+    <!-- Datos Estructurados JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Spot - Eventos El Salvador",
+        "description": "La mejor plataforma de eventos en El Salvador. Conciertos, deportes, cultura, tecnología.",
+        "url": "https://spot-eventos.com",
+        "applicationCategory": "Entertainment",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Spot",
+            "url": "https://spot-eventos.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Spot",
+            "url": "https://spot-eventos.com"
+        },
+        "keywords": "Spot, eventos El Salvador, conciertos, deportes, cultura, tecnología, entradas, tickets",
+        "inLanguage": "es",
+        "isAccessibleForFree": true,
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
+        "softwareVersion": "1.0",
+        "datePublished": "2024-01-01",
+        "dateModified": "2024-10-22"
+    }
+    </script>
     
     <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
@@ -49,8 +109,16 @@
     <main class="main">
         <section class="hero">
             <div class="container">
-                <h2>Spot los mejores eventos en El Salvador</h2>
-                <p>Descubre conciertos, festivales, conferencias y más eventos increíbles</p>
+                <h1>Spot - Los Mejores Eventos en El Salvador</h1>
+                <p>Descubre conciertos, festivales, conferencias, deportes y más eventos increíbles en El Salvador. Compra entradas, crea eventos y encuentra tu próximo evento favorito.</p>
+                <div class="hero-keywords" style="display: none;">
+                    <span>Spot eventos El Salvador</span>
+                    <span>conciertos San Salvador</span>
+                    <span>eventos deportivos</span>
+                    <span>festivales cultura</span>
+                    <span>tecnología conferencias</span>
+                    <span>entradas tickets</span>
+                </div>
             </div>
         </section>
 
@@ -334,6 +402,15 @@
 
     <script src="script.js"></script>
     <script src="payment-system.js"></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
     
     <!-- PWA Service Worker Registration -->
     <script>
