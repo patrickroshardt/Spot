@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot - Eventos El Salvador | Descubre los Mejores Eventos</title>
+    <meta name="description" content="Spot - La mejor plataforma de eventos en El Salvador. Conciertos, deportes, cultura, tecnología. Compra entradas, crea eventos, encuentra tu próximo evento favorito.">
+    <meta name="keywords" content="Spot, eventos El Salvador, conciertos, deportes, cultura, tecnología, entradas, tickets, eventos San Salvador, festivales, conferencias">
+    <meta name="author" content="Spot - Eventos El Salvador">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#8B5CF6">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spot-eventos.com/">
+    <meta property="og:title" content="Spot - Eventos El Salvador | Descubre los Mejores Eventos">
+    <meta property="og:description" content="La mejor plataforma de eventos en El Salvador. Conciertos, deportes, cultura, tecnología. Compra entradas, crea eventos.">
+    <meta property="og:image" content="https://spot-eventos.com/icon-512.png">
+    <meta property="og:site_name" content="Spot">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://spot-eventos.com/">
+    <meta property="twitter:title" content="Spot - Eventos El Salvador">
+    <meta property="twitter:description" content="La mejor plataforma de eventos en El Salvador. Conciertos, deportes, cultura, tecnología.">
+    <meta property="twitter:image" content="https://spot-eventos.com/icon-512.png">
+    
+    <!-- Geo tags para El Salvador -->
+    <meta name="geo.region" content="SV">
+    <meta name="geo.country" content="El Salvador">
+    <meta name="geo.placename" content="San Salvador">
+    <meta name="ICBM" content="13.7942, -88.8965">
+    
+    <!-- Datos Estructurados JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Spot - Eventos El Salvador",
+        "description": "La mejor plataforma de eventos en El Salvador. Conciertos, deportes, cultura, tecnología.",
+        "url": "https://spot-eventos.com",
+        "applicationCategory": "Entertainment",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "Spot",
+            "url": "https://spot-eventos.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Spot",
+            "url": "https://spot-eventos.com"
+        },
+        "keywords": "Spot, eventos El Salvador, conciertos, deportes, cultura, tecnología, entradas, tickets",
+        "inLanguage": "es",
+        "isAccessibleForFree": true,
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
+        "softwareVersion": "1.0",
+        "datePublished": "2024-01-01",
+        "dateModified": "2024-10-22"
+    }
+    </script>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Spot">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="spot-pin-logo">
+                    <svg class="pin-svg" width="40" height="40" viewBox="0 0 40 40">
+                        <!-- Pin blanco personalizado -->
+                        <path d="M20 2C12.27 2 6 8.27 6 16c0 8.5 14 22 14 22s14-13.5 14-22C34 8.27 27.73 2 20 2z" 
+                              fill="white" 
+                              stroke="#A855F7" 
+                              stroke-width="1"/>
+                        <!-- Punto central morado -->
+                        <circle cx="20" cy="16" r="6" fill="#8B5CF6"/>
+                    </svg>
+                </div>
+                <h1>Spot</h1>
+            </div>
+            <nav class="nav">
+                <a href="#eventos" class="nav-link active" data-section="eventos" onclick="return navigateToSection('eventos', this)">Eventos</a>
+                <a href="#mis-eventos" class="nav-link" data-section="mis-eventos" onclick="return navigateToSection('mis-eventos', this)">Mis Eventos</a>
+                <a href="#perfil" class="nav-link" data-section="perfil" onclick="return navigateToSection('perfil', this)">Perfil</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1>Spot - Los Mejores Eventos en El Salvador</h1>
+                <p>Descubre conciertos, festivales, conferencias, deportes y más eventos increíbles en El Salvador. Compra entradas, crea eventos y encuentra tu próximo evento favorito.</p>
+                <div class="hero-keywords" style="display: none;">
+                    <span>Spot eventos El Salvador</span>
+                    <span>conciertos San Salvador</span>
+                    <span>eventos deportivos</span>
+                    <span>festivales cultura</span>
+                    <span>tecnología conferencias</span>
+                    <span>entradas tickets</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="filters">
+            <div class="container">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar eventos...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="todos">Todos</button>
+                    <button class="filter-btn" data-category="musica">Música</button>
+                    <button class="filter-btn" data-category="deportes">Deportes</button>
+                    <button class="filter-btn" data-category="cultura">Cultura</button>
+                    <button class="filter-btn" data-category="tecnologia">Tecnología</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="events" id="eventos">
+            <div class="container">
+                <h3>Próximos Eventos</h3>
+                <div class="events-grid" id="eventsGrid">
+                    <!-- Los eventos se cargarán dinámicamente -->
+                </div>
+            </div>
+        </section>
+
+        <section class="mis-eventos" id="mis-eventos" style="display: none;">
+            <div class="container">
+                <div class="mis-eventos-header">
+                    <h3>Mis Eventos Creados</h3>
+                    <button class="btn-create-event" onclick="showCreateEventModal()">
+                        <i class="fas fa-plus"></i> Crear Evento
+                    </button>
+                </div>
+                <div class="mis-eventos-empty" id="misEventosEmpty">
+                    <i class="fas fa-calendar-plus"></i>
+                    <h4>No has creado ningún evento</h4>
+                    <p>Usa el botón "Crear Evento" para agregar tu primer evento</p>
+                    <button class="btn-create-event" onclick="showCreateEventModal()">
+                        <i class="fas fa-plus"></i> Crear Mi Primer Evento
+                    </button>
+                </div>
+                <div class="events-grid" id="misEventosGrid">
+                    <!-- Los eventos creados por el usuario se cargarán dinámicamente -->
+                </div>
+            </div>
+        </section>
+
+        <section class="perfil" id="perfil" style="display: none;">
+            <div class="container">
+                <!-- Estado de inicio de sesión -->
+                <div id="loginSection" class="login-section">
+                    <div class="login-card">
+                        <h2>Iniciar Sesión</h2>
+                        <div class="user-type-selector">
+                            <button type="button" class="user-type-btn active" data-type="cliente" onclick="selectUserType('cliente', this)">
+                                <i class="fas fa-user"></i>
+                                Cliente
+                            </button>
+                            <button type="button" class="user-type-btn" data-type="empresario" onclick="selectUserType('empresario', this)">
+                                <i class="fas fa-building"></i>
+                                Empresario
+                            </button>
+                        </div>
+                        <form id="loginForm" onsubmit="login(event)">
+                            <div class="form-group">
+                                <label for="loginEmail">Email:</label>
+                                <input type="email" id="loginEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">Contraseña:</label>
+                                <input type="password" id="loginPassword" required>
+                            </div>
+                            <button type="submit" class="btn-login">Iniciar Sesión</button>
+                        </form>
+                        <p class="login-register">
+                            ¿No tienes cuenta? <a href="#" onclick="showRegister()">Regístrate aquí</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Perfil del usuario (oculto inicialmente) -->
+                <div id="profileSection" class="profile-section" style="display: none;">
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <div class="profile-avatar">
+                                <img id="profileImage" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Foto de perfil">
+                                <button class="change-avatar-btn" onclick="changeAvatar()">
+                                    <i class="fas fa-camera"></i>
+                                </button>
+                            </div>
+                            <div class="profile-info">
+                                <h3 id="profileName">Usuario</h3>
+                                <p id="profileEmail">usuario@ejemplo.com</p>
+                                <span class="profile-badge">Miembro desde 2024</span>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <i class="fas fa-ticket-alt"></i>
+                                <span class="stat-number" id="ticketsOwned">0</span>
+                                <span class="stat-label">Entradas</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span class="stat-number" id="totalSpent">$0</span>
+                                <span class="stat-label">Total Gastado</span>
+                            </div>
+                            <div class="stat-item">
+                                <i class="fas fa-calendar-check"></i>
+                                <span class="stat-number" id="eventsAttended">0</span>
+                                <span class="stat-label">Asistidos</span>
+                            </div>
+                        </div>
+
+                        <!-- Sección de mis entradas -->
+                        <div class="my-tickets-section">
+                            <h3>Mis Entradas</h3>
+                            <div class="tickets-list" id="ticketsList">
+                                <!-- Las entradas se cargarán aquí -->
+                            </div>
+                            <div class="no-tickets" id="noTickets" style="display: none;">
+                                <i class="fas fa-ticket-alt"></i>
+                                <p>No tienes entradas compradas</p>
+                            </div>
+                        </div>
+
+                        <!-- Sección de gastos -->
+                        <div class="spending-section">
+                            <h3>Mis Gastos</h3>
+                            <div class="spending-summary">
+                                <div class="spending-item">
+                                    <span>Este mes:</span>
+                                    <span id="monthlySpending">$0</span>
+                                </div>
+                                <div class="spending-item">
+                                    <span>Total:</span>
+                                    <span id="totalSpending">$0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-actions">
+                            <button class="btn-edit" onclick="editProfile()">
+                                <i class="fas fa-edit"></i>
+                                Editar Perfil
+                            </button>
+                            <button class="btn-logout" onclick="logout()">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Cerrar Sesión
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Spot. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal para detalles del evento -->
+    <div class="modal" id="eventModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEventModal()">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Contenido del modal se cargará dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para editar perfil -->
+    <div class="modal" id="profileModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <h2>Editar Perfil</h2>
+                <form id="profileForm">
+                    <div class="form-group">
+                        <label for="editName">Nombre:</label>
+                        <input type="text" id="editName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editEmail">Email:</label>
+                        <input type="email" id="editEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editPhone">Teléfono:</label>
+                        <input type="tel" id="editPhone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="editCity">Ciudad:</label>
+                        <input type="text" id="editCity" name="city">
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-cancel" onclick="closeProfileModal()">Cancelar</button>
+                        <button type="submit" class="btn-save">Guardar Cambios</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para crear evento -->
+    <div class="modal" id="createEventModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCreateEventModal()">&times;</span>
+            <div class="modal-body">
+                <h2>📍 Crear Nuevo Evento</h2>
+                <form id="createEventForm" onsubmit="createEventFromApp(event)">
+                    <div class="form-group">
+                        <label for="newEventTitle">Título del Evento:</label>
+                        <input type="text" id="newEventTitle" required placeholder="Ej: Concierto de Rock Nacional">
+                    </div>
+                    <div class="form-group">
+                        <label for="newEventDate">Fecha:</label>
+                        <input type="date" id="newEventDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newEventTime">Hora:</label>
+                        <input type="time" id="newEventTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newEventLocation">Ubicación:</label>
+                        <input type="text" id="newEventLocation" required placeholder="Ej: Teatro Nacional, San Salvador">
+                    </div>
+                    <div class="form-group">
+                        <label for="newEventImage">Imagen del Evento:</label>
+                        <input type="file" id="newEventImage" accept="image/*" onchange="previewImage(event)">
+                        <div id="imagePreview" class="image-preview" style="display: none;">
+                            <img id="previewImg" src="" alt="Vista previa">
+                            <button type="button" onclick="removeImage()" class="remove-image-btn">×</button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Precios del Evento:</label>
+                        <div id="pricesContainer">
+                            <div class="price-input-group">
+                                <input type="text" placeholder="Tipo (ej: General)" class="price-type" required>
+                                <input type="number" placeholder="Precio" step="0.01" class="price-value" required>
+                                <button type="button" onclick="removePrice(this)" class="remove-price-btn">×</button>
+                            </div>
+                        </div>
+                        <button type="button" onclick="addPriceField()" class="add-price-btn">
+                            <i class="fas fa-plus"></i> Agregar Precio
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <label for="newEventCategory">Categoría:</label>
+                        <select id="newEventCategory" required>
+                            <option value="">Selecciona una categoría</option>
+                            <option value="musica">Música</option>
+                            <option value="deportes">Deportes</option>
+                            <option value="cultura">Cultura</option>
+                            <option value="tecnologia">Tecnología</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="newEventDescription">Descripción:</label>
+                        <textarea id="newEventDescription" rows="3" required placeholder="Describe tu evento..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="newEventContact">Tu email de contacto:</label>
+                        <input type="email" id="newEventContact" required placeholder="tu@email.com">
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn-cancel" onclick="closeCreateEventModal()">Cancelar</button>
+                        <button type="submit" class="btn-save">Crear Evento</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="payment-system.js"></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <!-- PWA Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js')
+                    .then(function(registration) {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(function(registrationError) {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+        
+        // Instalar PWA
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            // Mostrar botón de instalación
+            const installBtn = document.createElement('button');
+            installBtn.textContent = 'Instalar App';
+            installBtn.className = 'install-btn';
+            installBtn.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: #667eea;
+                color: white;
+                border: none;
+                padding: 12px 20px;
+                border-radius: 25px;
+                font-weight: 600;
+                cursor: pointer;
+                box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+                z-index: 1000;
+                transition: all 0.3s ease;
+            `;
+            
+            installBtn.addEventListener('click', () => {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the install prompt');
+                    }
+                    deferredPrompt = null;
+                    installBtn.remove();
+                });
+            });
+            
+            document.body.appendChild(installBtn);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://spot-eventos.com/sitemap.xml
+
+# Disallow admin panels
+Disallow: /admin-panel.html
+Disallow: /create-icons.html
+Disallow: /generate-all-icons.html
+
+# Allow all main content
+Allow: /index.html
+Allow: /styles.css
+Allow: /script.js
+Allow: /payment-system.js
+Allow: /manifest.json
+Allow: /sw.js
+Allow: /icon-192.png
+Allow: /icon-512.png
